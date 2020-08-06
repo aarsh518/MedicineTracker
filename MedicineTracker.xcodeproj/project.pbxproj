@@ -8,24 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		3DEE7B7224DC7F3500244E5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE7B7124DC7F3500244E5D /* AppDelegate.swift */; };
-		3DEE7B7424DC7F3500244E5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE7B7324DC7F3500244E5D /* SceneDelegate.swift */; };
-		3DEE7B7624DC7F3500244E5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE7B7524DC7F3500244E5D /* ViewController.swift */; };
 		3DEE7B7924DC7F3500244E5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DEE7B7724DC7F3500244E5D /* Main.storyboard */; };
 		3DEE7B7C24DC7F3500244E5D /* MedicineTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE7B7A24DC7F3500244E5D /* MedicineTracker.xcdatamodeld */; };
 		3DEE7B7E24DC7F3800244E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DEE7B7D24DC7F3800244E5D /* Assets.xcassets */; };
 		3DEE7B8124DC7F3800244E5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DEE7B7F24DC7F3800244E5D /* LaunchScreen.storyboard */; };
+		3DEE7B8B24DC84CD00244E5D /* TodayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE7B8A24DC84CD00244E5D /* TodayVC.swift */; };
+		3DEE7B8D24DC84DD00244E5D /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE7B8C24DC84DD00244E5D /* HistoryVC.swift */; };
+		3DEE7B9024DC861300244E5D /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE7B8F24DC861300244E5D /* HistoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3DEE7B6E24DC7F3500244E5D /* MedicineTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicineTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DEE7B7124DC7F3500244E5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DEE7B7324DC7F3500244E5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3DEE7B7524DC7F3500244E5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3DEE7B7824DC7F3500244E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DEE7B7B24DC7F3500244E5D /* MedicineTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MedicineTracker.xcdatamodel; sourceTree = "<group>"; };
 		3DEE7B7D24DC7F3800244E5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DEE7B8024DC7F3800244E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DEE7B8224DC7F3800244E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DEE7B8A24DC84CD00244E5D /* TodayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayVC.swift; sourceTree = "<group>"; };
+		3DEE7B8C24DC84DD00244E5D /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		3DEE7B8F24DC861300244E5D /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,41 @@
 		3DEE7B7024DC7F3500244E5D /* MedicineTracker */ = {
 			isa = PBXGroup;
 			children = (
-				3DEE7B7124DC7F3500244E5D /* AppDelegate.swift */,
-				3DEE7B7324DC7F3500244E5D /* SceneDelegate.swift */,
-				3DEE7B7524DC7F3500244E5D /* ViewController.swift */,
-				3DEE7B7724DC7F3500244E5D /* Main.storyboard */,
+				3DEE7B8924DC830100244E5D /* Views */,
+				3DEE7B8824DC82DE00244E5D /* Controllers */,
 				3DEE7B7D24DC7F3800244E5D /* Assets.xcassets */,
-				3DEE7B7F24DC7F3800244E5D /* LaunchScreen.storyboard */,
 				3DEE7B8224DC7F3800244E5D /* Info.plist */,
 				3DEE7B7A24DC7F3500244E5D /* MedicineTracker.xcdatamodeld */,
 			);
 			path = MedicineTracker;
+			sourceTree = "<group>";
+		};
+		3DEE7B8824DC82DE00244E5D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3DEE7B7124DC7F3500244E5D /* AppDelegate.swift */,
+				3DEE7B8A24DC84CD00244E5D /* TodayVC.swift */,
+				3DEE7B8C24DC84DD00244E5D /* HistoryVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3DEE7B8924DC830100244E5D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3DEE7B8E24DC85E600244E5D /* TableViewCells */,
+				3DEE7B7724DC7F3500244E5D /* Main.storyboard */,
+				3DEE7B7F24DC7F3800244E5D /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3DEE7B8E24DC85E600244E5D /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				3DEE7B8F24DC861300244E5D /* HistoryTableViewCell.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DEE7B7624DC7F3500244E5D /* ViewController.swift in Sources */,
+				3DEE7B8B24DC84CD00244E5D /* TodayVC.swift in Sources */,
+				3DEE7B8D24DC84DD00244E5D /* HistoryVC.swift in Sources */,
 				3DEE7B7224DC7F3500244E5D /* AppDelegate.swift in Sources */,
 				3DEE7B7C24DC7F3500244E5D /* MedicineTracker.xcdatamodeld in Sources */,
-				3DEE7B7424DC7F3500244E5D /* SceneDelegate.swift in Sources */,
+				3DEE7B9024DC861300244E5D /* HistoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yQW-oD-efR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--History-->
+        <scene sceneID="UZ7-i9-7dV">
+            <objects>
+                <viewController id="Mfh-u2-f7j" customClass="HistoryVC" customModule="MedicineTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6rL-Ww-4Ym">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="eUT-FB-cYF"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="History" id="2gV-pq-LHJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5qT-iV-QXq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="627" y="411"/>
+        </scene>
+        <!--Today-->
+        <scene sceneID="JA0-pi-No7">
+            <objects>
+                <viewController id="NQB-dO-nVa" customClass="TodayVC" customModule="MedicineTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6h2-BT-jKX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="SWw-wH-kub"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Today" id="q13-Av-eV6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CXa-al-uA1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="627" y="-237"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="zks-Wm-8jk">
+            <objects>
+                <tabBarController id="yQW-oD-efR" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zss-04-Aqo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="NQB-dO-nVa" kind="relationship" relationship="viewControllers" id="d6g-us-PDv"/>
+                        <segue destination="Mfh-u2-f7j" kind="relationship" relationship="viewControllers" id="MOZ-dq-2cz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VGu-cZ-e2Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-291" y="87"/>
+        </scene>
+    </scenes>
+</document>
