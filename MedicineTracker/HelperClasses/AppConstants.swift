@@ -1,5 +1,5 @@
 //
-//  HistoryVC.swift
+//  AppConstants.swift
 //  MedicineTracker
 //
 //  Created by Aarsh Parekh on 07/08/20.
@@ -8,10 +8,4 @@
 
 import UIKit
 
-class HistoryVC: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-}
+let appDelegate = UIApplication.shared.delegate as! AppDelegate

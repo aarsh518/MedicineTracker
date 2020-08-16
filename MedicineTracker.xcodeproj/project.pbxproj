@@ -15,6 +15,10 @@
 		3DEE7B8B24DC84CD00244E5D /* TodayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE7B8A24DC84CD00244E5D /* TodayVC.swift */; };
 		3DEE7B8D24DC84DD00244E5D /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE7B8C24DC84DD00244E5D /* HistoryVC.swift */; };
 		3DEE7B9024DC861300244E5D /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE7B8F24DC861300244E5D /* HistoryTableViewCell.swift */; };
+		3DEE7B9324DCA7A300244E5D /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE7B9224DCA7A300244E5D /* DateExtension.swift */; };
+		3DEE7B9624DCA9AA00244E5D /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE7B9524DCA9AA00244E5D /* DataBaseManager.swift */; };
+		3DEE7B9824DCA9C400244E5D /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE7B9724DCA9C400244E5D /* AppConstants.swift */; };
+		3DEE7B9B24DCAB6800244E5D /* TodayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE7B9A24DCAB6800244E5D /* TodayViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		3DEE7B8A24DC84CD00244E5D /* TodayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayVC.swift; sourceTree = "<group>"; };
 		3DEE7B8C24DC84DD00244E5D /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 		3DEE7B8F24DC861300244E5D /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		3DEE7B9224DCA7A300244E5D /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		3DEE7B9524DCA9AA00244E5D /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		3DEE7B9724DCA9C400244E5D /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		3DEE7B9A24DCAB6800244E5D /* TodayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,9 @@
 		3DEE7B7024DC7F3500244E5D /* MedicineTracker */ = {
 			isa = PBXGroup;
 			children = (
+				3DEE7B9924DCAB3600244E5D /* ViewModel */,
+				3DEE7B9424DCA98A00244E5D /* Classes */,
+				3DEE7B9124DCA78900244E5D /* HelperClasses */,
 				3DEE7B8924DC830100244E5D /* Views */,
 				3DEE7B8824DC82DE00244E5D /* Controllers */,
 				3DEE7B7D24DC7F3800244E5D /* Assets.xcassets */,
@@ -95,6 +106,31 @@
 				3DEE7B8F24DC861300244E5D /* HistoryTableViewCell.swift */,
 			);
 			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		3DEE7B9124DCA78900244E5D /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				3DEE7B9224DCA7A300244E5D /* DateExtension.swift */,
+				3DEE7B9724DCA9C400244E5D /* AppConstants.swift */,
+			);
+			path = HelperClasses;
+			sourceTree = "<group>";
+		};
+		3DEE7B9424DCA98A00244E5D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3DEE7B9524DCA9AA00244E5D /* DataBaseManager.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3DEE7B9924DCAB3600244E5D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3DEE7B9A24DCAB6800244E5D /* TodayViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,10 +205,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DEE7B8B24DC84CD00244E5D /* TodayVC.swift in Sources */,
+				3DEE7B9324DCA7A300244E5D /* DateExtension.swift in Sources */,
 				3DEE7B8D24DC84DD00244E5D /* HistoryVC.swift in Sources */,
+				3DEE7B9824DCA9C400244E5D /* AppConstants.swift in Sources */,
 				3DEE7B7224DC7F3500244E5D /* AppDelegate.swift in Sources */,
+				3DEE7B9624DCA9AA00244E5D /* DataBaseManager.swift in Sources */,
 				3DEE7B7C24DC7F3500244E5D /* MedicineTracker.xcdatamodeld in Sources */,
 				3DEE7B9024DC861300244E5D /* HistoryTableViewCell.swift in Sources */,
+				3DEE7B9B24DCAB6800244E5D /* TodayViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
